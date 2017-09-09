@@ -10,7 +10,7 @@
     <body>
         <div class="container">
            <center><h1><b>Toro<b></h1></center>
-           <center><h3>Hi, I'm Flix.<h3>
+               <center><h3>Hi, I'm <span id="mcname">Toro</span>.<h3>
            <br><br>
            <a href="https://twitter.com/Quiflix"><img src="Twitter.svg" alt="Twitter" height="10%" width="10%" data-toggle="tooltip" title="@Quiflix"></a>
            <a href="https://discordapp.com/channels/@me/241423671191666691"><img src="Discord.svg" alt="Discord" height="10%" width="10%" data-toggle="tooltip" title="@Toro#2887"></a>
@@ -20,6 +20,10 @@
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();   
         });
+            
+        $.getJSON('https://use.gameapis.net/mc/player/profile/a6b1b62100bb446baef56d200664d3cb', function(data) {
+            $('#mcname').text(data.name)
+        }); 
         </script>
     </body>
 </html>

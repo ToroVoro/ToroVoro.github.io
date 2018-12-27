@@ -23,8 +23,8 @@
             $('[data-toggle="tooltip"]').tooltip();   
         });
             
-        $.getJSON('https://use.gameapis.net/mc/player/profile/a6b1b62100bb446baef56d200664d3cb', function(data) {
-            $('#mcname').text(data.name)
+        $.getJSON('https://mcapi.de/api/user/a6b1b62100bb446baef56d200664d3cb', function(data) {
+            $('#mcname').text(data.username)
         }); 
         </script>
     </body>

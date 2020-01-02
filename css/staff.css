@@ -43,6 +43,7 @@ h2 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	text-align: center;
 	margin: 20px auto 10px auto;
 	width: 95%;
 }
@@ -50,6 +51,7 @@ h2 {
 .staff {
 	background: linear-gradient(#4286f4, #70d8ff) fixed;
 	padding: 40px 0;
+	text-align: center;
 }
 
 .staff h2 {

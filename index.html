@@ -1,31 +1,63 @@
+<!-- Proudly created by BlexieKing -->
+<!-- https://www.spigotmc.org/members/blexieking.168027 -->
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Toro's Website</title>
-    </head>
-    <body>
-        <div class="container">
-           <center><h1><b>Toro<b></h1></center>
-               <center><h3>Hi, I'm <span id="mcname">Toro</span>.<h3>
-           <br><br>
-           <a href="https://twitter.com/Quiflix"><img src="Twitter.svg" alt="Twitter" height="10%" width="10%" data-toggle="tooltip" title="@Quiflix"></a>    
-           <a href="https://namemc.com/profile/a6b1b621-00bb-446b-aef5-6d200664d3cb"><img src="NameMC.svg" alt="NameMC" height="10%" width="10%" data-toggle="tooltip" title="NameMC"></a>    
-           <div style="position: absolute; bottom: 0; right: 0; width: 100px; text-align:right;font-size: 10px;font-weight:lighter;">
-            Jorge was here, Vinixs was here haha, and Rylan was here.
-           </div>
-        </div>
-        <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-        });
-            
-        $.getJSON('https://mcapi.de/api/user/a6b1b62100bb446baef56d200664d3cb', function(data) {
-            $('#mcname').text(data.username)
-        }); 
-        </script>
-    </body>
+<head>
+	<title>OG Mafia - Official Website</title>
+	<meta name="description" content="OG Mafia is a revolutionary Box Critters clan. You can join the discord at 'https://discord.gg/JQ8UykA'.">
+	<meta name="keywords" content="OG, OGMafia, OG Mafia, Box Critters, Fun, Play, Info, Website, Official">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900' type='text/css'>
+	<script src="https://cdn.rawgit.com/leonardosnt/mc-player-counter/1.1.0/dist/mc-player-counter.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header">
+				<div class="logo">
+					<!-- In the img folder, upload your logo. -->
+					<!-- Make sure to name it 'logo.png'! -->
+					<a href="/"><img src="img/logo.png" alt="OG Mafia"></a>
+				</div>
+
+				<ul class="nav">
+					<li><a href="./">Home</a></li>
+					<li><a href="./staff.html">Staff</a></li>
+				</ul>
+			</div>
+			<h1 class="animate">Welcome to the official OG Mafia website!</h1>
+			<div class="playercount">
+				<!-- Replace play.flaremc.net with your IP address! -->
+				<!-- Make sure to do it for both examples below. -->
+				<p>Join the community at <span>https://discord.gg/JQ8UykA</span></p>
+			</div>
+		</header>
+
+		<div class="main-content">
+			<h2>About Us</h2>
+			<p class="about-text">What's up critters! We are a group looking for OG players that have been around for a while. If you are an OG this is a place for you, but anyone is able to join! We will be hosting certain events with certain items, mostly old items that are not available anymore. You can also earn lots of cool roles, so join us today!</p>
+		</div>
+
+		<div class="gradient">
+			<div class="flex-container">
+				<div class="split">
+					<a href="#"><img class="img" src="img/store.png" alt="Our Discord"></a>
+					<p>Join the discord community for frequent member updates and event times!</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<p>Copyright &copy; OG Mafia 2020</p>
+		</footer>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
 </html>
